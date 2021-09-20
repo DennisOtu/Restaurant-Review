@@ -87,8 +87,8 @@ const RestaurantsList = props => {
 
   return (
     <div>
-      <div className="row pb-1">
-        <div className="input-group col-lg-4">
+      <div className="row py-4">
+        <div className="col-lg-4">
           <input
             type="text"
             className="form-control"
@@ -96,7 +96,7 @@ const RestaurantsList = props => {
             value={searchName}
             onChange={onChangeSearchName}
           />
-          <div className="input-group-append">
+          <div className="input-group-append pt-3">
             <button
               className="btn btn-outline-secondary"
               type="button"
@@ -106,7 +106,7 @@ const RestaurantsList = props => {
             </button>
           </div>
         </div>
-        <div className="input-group col-lg-4">
+        <div className="col-lg-4">
           <input
             type="text"
             className="form-control"
@@ -114,7 +114,7 @@ const RestaurantsList = props => {
             value={searchZip}
             onChange={onChangeSearchZip}
           />
-          <div className="input-group-append">
+          <div className="input-group-append pt-3">
             <button
               className="btn btn-outline-secondary"
               type="button"
@@ -124,7 +124,7 @@ const RestaurantsList = props => {
             </button>
           </div>
         </div>
-        <div className="input-group col-lg-4">
+        <div className="col-lg-4">
           <select onChange={onChangeSearchCuisine}>
              {cuisines.map(cuisine => {
                return (
@@ -132,7 +132,7 @@ const RestaurantsList = props => {
                )
              })}
           </select>
-          <div className="input-group-append">
+          <div className="input-group-append mt-4 pt-1">
             <button
               className="btn btn-outline-secondary"
               type="button"

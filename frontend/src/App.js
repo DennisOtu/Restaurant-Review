@@ -24,13 +24,13 @@ function App() {
         <a href="/restaurants" className="px-5 navbar-brand">
           Restaurant Reviews
         </a>
-        <div className="navbar-nav mr-auto">
-          <li className="nav-item">
+        <div className="navbar-nav">
+          <li className="nav-item mx-5">
             <Link to={"/restaurants"} className="nav-link">
               Restaurants
             </Link>
           </li>
-          <li className="nav-item" >
+          <li className="nav-item ml-auto " >
             { user ? (
               <a onClick={logout} className="nav-link" style={{cursor:'pointer'}}>
                 Logout {user.name}
